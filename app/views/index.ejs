@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Use the 'title' property to render a page title  -->
+    <title><%= title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/display.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+    
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage">Green Trade</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#career">CAREER</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="home" >
+    
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h3><b>Welcome to Green Trade</b></h3>
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" >
+            <div class="item active" align="center">
+              <img src="img/1.jpg" alt="Green Trade" class="img1">
+            </div>
+      
+            <div class="item" align="center">
+              <img src="img/2.jpg" alt="Green Trade" class="img2">
+            </div>
+          
+            <div class="item" align="center">
+              <img src="img/3.jpg" alt="Green Trade" class="img3">
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Container (About Section) -->
+  <div id="about" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>About Company Page</h2><br>
+        <h4>We promote recycling in an attempt to reduce global waste and increase reusability. By acting as a middle man for consumers and producers/suppliers, we reward consumers for recycling and provide suppliers with a steady source of recyclables.
+        </h4><br>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-signal logo"></span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="center" src="img/3.jpg" alt="Logo" width="90%" height="90%">
+      </div>
+      <div class="col-sm-8">
+        <h2>Our Values</h2><br>
+        <h4><strong>MISSION:</strong> Our mission is to create a greener environment!</h4><br>
+        <p><strong>VISION:</strong> Our vision is, "As the global community looks towards greener solutions to suit their lifestyles, new and innovative programs need to be introduced to satisfy the demand of the individuals who want to make an impact on saving the planet."</p>
+      </div>
+    </div>
+  </div>
+  
+ 
+    
+    <h2>What our customers say</h2>
+    <div id="myCarousel" class="carousel slide text-center container-fluid bg-grey" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+        </div>
+        <div class="item">
+          <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+        </div>
+        <div class="item">
+          <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Container (Career Section) -->
+  <div id="career" class="container-fluid">
+    <div class="text-center">
+      <h2>Career</h2>
+      <h4>Want to apply for the position of Collector?</h4>
+    </div>
+    <div class="container-fluid bg-grey">
+       
+
+      <form id="add-cafe-form">
+        <div class="row">
+            <div class="col-sm-3 form-group">
+              <label>First Name</label>
+              <input class="form-control" id="firstname" name="firstname" data-key="firstname" placeholder="First Name" type="text" required>
+            </div>
+            <div class="col-sm-3 form-group">
+              <label>Last Name</label>
+              <input class="form-control" id="lastname" name="lastname" data-key="lastname" placeholder="Last Name" type="text" required>
+            </div>
+            <div class="col-sm-3 form-group">
+              <label>Email</label>
+              <input class="form-control" id="email" name="email" data-key="email" placeholder="Email" type="email" required>
+            </div>
+            <div class="col-sm-3 form-group">
+              <label>Phone</label>
+              <input class="form-control" id="phone" name="phone" data-key="phone" placeholder="Phone" type="text" required>
+            </div>
+            <div class="col-sm-3 form-group">
+              <label>Address</label>
+              <input class="form-control" id="address" name="address" data-key="address" placeholder="Address" type="text" required>
+            </div>
+            <div class="col-sm-3 form-group">
+              <label>Zipcode</label>
+              <input class="form-control" id="zipcode" name="zipcode" data-key="zipcode" placeholder="Zipcode" type="text" required>
+            </div>
+            <div class="col-sm-3 form-group">
+              <label>City</label>
+              <input class="form-control" id="city" name="city" placeholder="City" data-key="city" type="text" required>
+            </div>
+            <div class="col-sm-3 form-group">
+              <label>Resume</label>
+              <input class="form-control" id="resume" name="resume"  type="file">
+            </div> 
+            <div class="col-sm-3 form-group">
+              <button class="btn btn-default pull-left" id="add-user-btnii" type="submit">Submit</button>
+            </div>
+          
+          </div>
+
+    </form>
+        
+    <br>
+  </div>
+  <div class="container-fluid"></div>
+  <!-- Container (Contact Section) -->
+  <div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT US</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Scarborough, On, CA</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +1 6478484848</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> greentrade@gmail.com</p>
+      </div>
+      <div>
+        <div class="row">
+          <form id="contactUs">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="contactEmail" name="contactEmail" placeholder="Email" type="email" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="2"></textarea><br>
+          </div>
+          <div class="col-sm-6 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </form>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+    apiKey: "AIzaSyDOtbNG7wrYY_fhJmIxfXPy_421wGeR-iM",
+    authDomain: "green-trade-comp313.firebaseapp.com",
+    databaseURL: "https://green-trade-comp313.firebaseio.com",
+    projectId: "green-trade-comp313",
+    storageBucket: "green-trade-comp313.appspot.com",
+    messagingSenderId: "293966987703",
+    appId: "1:293966987703:web:b071c6520502f44250a832",
+    measurementId: "G-KVSXZLJ2MS"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true }); 
+
+
+    
+const form = document.querySelector('#add-cafe-form');
+const contactUsForm = document.querySelector('#contactUs');
+
+// saving data
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    db.collection('career').add({
+        firstname: form.firstname.value,
+        lastname: form.lastname.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        address: form.address.value,
+        zipcode: form.zipcode.value,
+        city: form.city.value
+    });
+    form.firstname.value = '';
+    form.lastname.value = '';
+    form.email.value = '';
+    form.phone.value = '';
+    form.address.value = '';
+    form.zipcode.value = '';
+    form.city.value = '';
+    alert("Thank you for applying!");
+});
+
+contactUsForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    db.collection('contact-us').add({
+        name: contactUsForm.name.value,
+        email: contactUsForm.contactEmail.value,
+        comments: contactUsForm.comments.value
+    });
+    contactUsForm.name.value = '';
+    contactUsForm.contactEmail.value = '';
+    contactUsForm.comments.value = '';
+});
+
+
+
+</script>
+
+  
+</body>
+</html>
