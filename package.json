@@ -1,5 +1,5 @@
 {
-	"name": "smriti_comp308lab2",
+	"name": "COMP313-GreenTrade-GeneralWebsite",
 	"version": "0.0.6",
 	"dependencies": {
 		"bcrypt": "^3.0.7",
